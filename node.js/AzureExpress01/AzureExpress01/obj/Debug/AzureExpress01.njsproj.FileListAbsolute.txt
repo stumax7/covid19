@@ -1,0 +1,6 @@
+C:\Users\WORKER\source\repos\AzureExpress01\AzureExpress01\obj\Debug\AzureExpress01.njsprojAssemblyReference.cache
+C:\Users\WORKER\source\repos\AzureExpress01\AzureExpress01\obj\Debug\AzureExpress01.njsproj.CoreCompileInputs.cache
+C:\Users\WORKER\source\repos\AzureExpress01\AzureExpress01\bin\Microsoft.NodejsTools.WebRole.dll
+C:\code\covid-19-data-repo\node.js\AzureExpress01\AzureExpress01\obj\Debug\AzureExpress01.njsprojAssemblyReference.cache
+C:\code\covid-19-data-repo\node.js\AzureExpress01\AzureExpress01\obj\Debug\AzureExpress01.njsproj.CoreCompileInputs.cache
+C:\code\covid-19-data-repo\node.js\AzureExpress01\AzureExpress01\bin\Microsoft.NodejsTools.WebRole.dll

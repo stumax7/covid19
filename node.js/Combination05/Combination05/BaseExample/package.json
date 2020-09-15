@@ -1,0 +1,23 @@
+{
+    "name": "base-example",
+    "version": "0.0.0",
+    "description": "BaseExample",
+    "main": "server.js",
+    "author": {
+        "name": ""
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "mysql": "^2.18.1",
+        "path": "^0.12.7",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "ts-loader": "^8.0.3",
+        "typescript": "^4.0.2",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12"
+    },
+    "scripts": {
+        "build": "webpack-cli app.tsx --config webpack-config.js"
+    }
+}

@@ -1,0 +1,5 @@
+C:\Users\WORKER\source\repos\BackendAPI\BackendAPI\obj\Debug\BackendAPI.njsproj.CoreCompileInputs.cache
+C:\Users\WORKER\source\repos\BackendAPI\BackendAPI\bin\Microsoft.NodejsTools.WebRole.dll
+C:\code\covid-19-data-repo\node.js\BackendAPI\BackendAPI\obj\Debug\BackendAPI.njsprojAssemblyReference.cache
+C:\code\covid-19-data-repo\node.js\BackendAPI\BackendAPI\obj\Debug\BackendAPI.njsproj.CoreCompileInputs.cache
+C:\code\covid-19-data-repo\node.js\BackendAPI\BackendAPI\bin\Microsoft.NodejsTools.WebRole.dll

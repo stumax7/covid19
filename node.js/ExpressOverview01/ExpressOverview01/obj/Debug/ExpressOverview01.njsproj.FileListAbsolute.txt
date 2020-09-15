@@ -1,0 +1,5 @@
+C:\Users\WORKER\source\repos\ExpressOverview01\ExpressOverview01\obj\Debug\ExpressOverview01.njsproj.CoreCompileInputs.cache
+C:\Users\WORKER\source\repos\ExpressOverview01\ExpressOverview01\bin\Microsoft.NodejsTools.WebRole.dll
+C:\code\covid-19-data-repo\node.js\ExpressOverview01\ExpressOverview01\obj\Debug\ExpressOverview01.njsprojAssemblyReference.cache
+C:\code\covid-19-data-repo\node.js\ExpressOverview01\ExpressOverview01\obj\Debug\ExpressOverview01.njsproj.CoreCompileInputs.cache
+C:\code\covid-19-data-repo\node.js\ExpressOverview01\ExpressOverview01\bin\Microsoft.NodejsTools.WebRole.dll

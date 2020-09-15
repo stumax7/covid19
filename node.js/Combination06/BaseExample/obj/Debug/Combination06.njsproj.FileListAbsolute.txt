@@ -1,0 +1,6 @@
+C:\Users\WORKER\source\repos\Combination06\BaseExample\obj\Debug\Combination06.njsproj.CoreCompileInputs.cache
+C:\Users\WORKER\source\repos\Combination06\BaseExample\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\WORKER\source\repos\Combination06\BaseExample\obj\Debug\Combination06.njsprojAssemblyReference.cache
+C:\code\covid-19-data-repo\node.js\Combination06\BaseExample\obj\Debug\Combination06.njsprojAssemblyReference.cache
+C:\code\covid-19-data-repo\node.js\Combination06\BaseExample\obj\Debug\Combination06.njsproj.CoreCompileInputs.cache
+C:\code\covid-19-data-repo\node.js\Combination06\BaseExample\bin\Microsoft.NodejsTools.WebRole.dll

@@ -1,0 +1,3 @@
+C:\code\covid-19-data-repo\node.js\HelloWorldTest\HelloWorldTest\obj\Debug\HelloWorldTest.njsprojAssemblyReference.cache
+C:\code\covid-19-data-repo\node.js\HelloWorldTest\HelloWorldTest\obj\Debug\HelloWorldTest.njsproj.CoreCompileInputs.cache
+C:\code\covid-19-data-repo\node.js\HelloWorldTest\HelloWorldTest\bin\Microsoft.NodejsTools.WebRole.dll
