@@ -73,6 +73,7 @@ render() {
     return (
       <div className="App">
         <h1>Covid-19 Stats</h1>
+       <div>
         <Modal1 show={this.state.show1} handleClose={this.hideModal1}>
           <p>Creating a substantiative project is the best way to demonstrate one’s skills.  This project shows my journey thus far towards becoming a full stack developer. The journey started with a JAVA coding bootcamp that ended in the height of the lockdown. Subsequently, I have continued to expand my skills as shown in this project. </p>
           <ul>
@@ -91,12 +92,15 @@ render() {
         <button type="button" onClick={this.showModal1}>
           My journey toward full-stack development
         </button>
+        </div>
+        <div>
         <Modal2 show={this.state.show2} handleClose={this.hideModal2}>
-         <p>CURRENT STATE = MVS proving technical architecture. See backlog in Jira for stories left to be completed. While bits of COVID-19 data are everywhere, it is hard for the data scientist to combine that data into larger datasets for analysis. The project’s goal is the aggregation of all state / county COVID 19 data since record keeping started in January 2020 so the data scientist can select large and small sets for use in analytics tools. React-Table was selected because it provides a on-screen view and the ability to simultaneously scrape the data into an Excel spreadsheet. React-Vis is used to help the data scientist quickly understand the data selected.</p>
+         <p>CURRENT STATE = MVS proving technical architecture. See backlog in Jira for stories left to be completed. While bits of COVID-19 data are everywhere, it is hard for the data scientist to combine that data into larger datasets for analysis. The project’s goal is the aggregation of state/county COVID 19 data so the data scientist can select large and small sets for use in analytics tools. React-Table was selected because it provides a on-screen view and the ability to simultaneously scrape the data into an Excel spreadsheet. React-Vis is used to help the data scientist quickly understand the data selected.</p>
         </Modal2>
         <button type="button" onClick={this.showModal2}>
           Project Delivers
         </button>
+        </div>
         <p>This app provides Covid-19 data for all fifty U.S. states in a table (top of the page) and a bar graph (bottom of the page). Simply type the name of the state you wish to view in the form below and click submit.</p>
         <p>All data comes from <a href="https://coronavirus.jhu.edu/map.html">Johns Hopkins Coronavirus Resource Center</a>.</p>
         {/* Pass method reference to give button functionality */}
