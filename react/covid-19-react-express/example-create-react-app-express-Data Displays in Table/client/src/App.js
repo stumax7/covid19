@@ -15,11 +15,15 @@ class App extends Component {
 
     //Sets initial state to empty array
     this.state = {
-      post: '',
+      state: '',
+      county: '',
+      date1: '',
+      date2: '',
       responseToPost: '',
       data: [],
       show1: false,
-      show2: false
+      show2: false,
+      gatheringData: false
     }
 
     //Object of class CallApi receives data object and sets the state equal to that object
@@ -54,19 +58,31 @@ class App extends Component {
   //POST request places user input in SQL SELECT statement on backend
   handleSubmit = async e => {
     e.preventDefault();
-    const response = await fetch('/api/world', {
+
+    this.setState({gatheringData: true});
+
+    const response = await fetch('/api/filter', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ post: this.state.post }),
-      
+      body: JSON.stringify({ 
+        state: this.state.state,
+        county: this.state.county,
+        date1: this.state.date1,
+        date2: this.state.date2
+     }),
     });
+
     const body = await response.json();
 
     console.log(body);
 
-    this.setState({ data: body });
+    this.setState({ 
+      data: body,
+      gatheringData: false
+    });
+    
   };
 
 render() {
@@ -106,18 +122,36 @@ render() {
         {/* Pass method reference to give button functionality */}
         <form onSubmit={this.handleSubmit}>
           <p>
-            <strong>Enter U.S. state:</strong>
+            <strong>Enter U.S. state, county, from date, and to date:</strong>
           </p>
           <input
             type="text"
-            onChange={e => this.setState({ post: e.target.value })}
+            placeholder="State"
+            onChange={e => this.setState({ state: e.target.value })}
+          />
+          <input
+            type="text"
+            placeholder="County"
+            onChange={e => this.setState({ county: e.target.value })}
+          />
+          <input
+            type="text"
+            placeholder="YYYY-MM-DD"
+            onChange={e => this.setState({ date1: e.target.value })}
+          />
+          <input
+            type="text"
+            placeholder="YYYY-MM-DD"
+            onChange={e => this.setState({ date2: e.target.value })}
           />
           <button type="submit">Submit</button>
+          {(this.state.gatheringData) && <span>Gathering data...</span> }
         </form>
         {/* Pass data object as property of table component */}
-        <Table data = {this.state.data}/>
         <p></p>
         <Graph data = {this.state.data} />
+        <p></p>
+        <Table data = {this.state.data}/>
         {/* Pass method reference to give button functionality */}
         {/* <button type= "button" onClick={this.updateTable}>Load Data For All Fifty States</button> */}
       </div>

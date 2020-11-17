@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Data Acquisition</title>
+<style type="text/css">
+.auto-style1 {
+	background-color: #004D86;
+}
+.auto-style2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	color: #FFFFFF;
+}
+</style>
+</head>
+
+<body>
+
+<table class="auto-style1" style="width: 100%">
+	<tr>
+		<td class="auto-style2">Data Collection</td>
+	</tr>
+</table>
+<ul>
+	<li>
+	<p class="MsoNormal">Problem: Universally accepted source for Covid-19 data 
+	is Johns Hopkins github site that produces a daily csv file with a format 
+	that is continuously varying and less than perfect adherence to file format 
+	guidelines</p>
+	</li>
+	<li>
+	<p class="MsoNormal">Requires user to download each day's csv file and 
+	process with a Python program that </p>
+	<ul>
+		<li>
+		<p class="MsoNormal">performs multiple editing passes,</p>
+		</li>
+		<li>
+		<p class="MsoNormal">ensures required data elements exist,</p>
+		</li>
+		<li>
+		<p class="MsoNormal">transforms data to a consistent scheme.</p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="MsoNormal">File list lists file name and reporting date: authors of 
+	data were not able to keep date in sync with reporting date<o:p></o:p></p>
+	</li>
+	<li>
+	<p class="MsoNormal">Run label uses random number function to identify 
+	records by the run during which they were inserted<o:p></o:p></p>
+	<ul>
+		<li>
+		<p class="MsoNormal">used for recovery when loading many files<o:p></o:p></p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="MsoNormal">The central data-loading operation is accomplished with 
+	nested loops<o:p>:</o:p></p>
+	<ul>
+		<li>
+		<p class="MsoNormal">First pass: check all elements exist<o:p></o:p></p>
+		<ul>
+			<li>
+			<p class="MsoNormal">try/except error-catching notifies user how 
+			many elements are missing in each row<o:p></o:p></p>
+			</li>
+		</ul>
+		</li>
+		<li>
+		<p class="MsoNormal">Second pass: load data<o:p></o:p></p>
+		<ul>
+			<li>
+			<p class="MsoNormal">Each column is error-checked. Character columns 
+			are stripped. Numeric columns with errors are substituted with a 
+			zero value. FloatTest function used to check float values.<o:p></o:p></p>
+			</li>
+			<li>
+			<p class="MsoNormal">SQL INSERT statement used to insert all columns 
+			into table<o:p></o:p></p>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="MsoNormal">SQL SELECT/GROUP BY statement used to print record 
+	counts and hash totals<o:p></o:p></p>
+	<ul>
+		<li>
+		<p class="MsoNormal">Uses array destructuring<o:p></o:p></p>
+		</li>
+		<li>
+		<p class="MsoNormal">Hash totals: report date, counties reporting, total 
+		confirmed cases, total deaths, total recovered, total active<o:p></o:p></p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="MsoNormal">Datetime.now() gives times for beginning and end of run<o:p></o:p></p>
+	</li>
+</ul>
+<p><a href="index.html">Back to overview</a></p>
+<p style="width: 617px; height: 396px">
+<img alt="" height="817" src="./assets/images/python-load-data.PNG" width="1130" /></p>
+
+</body>
+
+</html>

@@ -51,5 +51,23 @@ con.connect(function (err) {
         });
     });
 
+    //Set up post request for localhost:3000/api/filter
+    app.post('/api/filter', (req, res) => {
+        //Query database with sql select statement and send result
+        let query = `SELECT * FROM covid19DataByCounty WHERE ProvinceState = "${req.body.state}"`;
+        if (req.body.county !== "") {
+            query += ` AND County = "${req.body.county}"`;
+        } 
+        if (req.body.date1 !== "" && req.body.date2 !== "") {
+            query += ` AND ReportDate BETWEEN "${req.body.date1}" AND "${req.body.date2}"`;
+        }
+        con.query(query, function (err, result, fields) {
+            if (err) throw err;
+            console.log("Result : " + JSON.stringify(result) + " Err : " + err);
+            res.send(result);
+            console.log("Response sent")
+        });
+    });
+
     app.listen(port, () => console.log(`Listening on port ${port}`));
 });

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+<style type="text/css">
+.auto-style1 {
+	background-color: #004D86;
+}
+.auto-style2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	color: #FFFFFF;
+}
+</style>
+</head>
+
+<body>
+
+<table class="auto-style1" style="width: 100%">
+	<tr>
+		<td class="auto-style2">Front end</td>
+	</tr>
+</table>
+<ul>
+	<li>
+	<p class="MsoNormal">App is a stateful React component<o:p></o:p></p>
+	<ul>
+		<li>
+		<p class="MsoNormal">Data state variable set to an empty array<o:p></o:p></p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="MsoNormal">CallApi class extends EventEmitter<o:p></o:p></p>
+	<ul>
+		<li>
+		<p class="MsoNormal">Separates asynchronous calls from synchronous App 
+		class<o:p></o:p></p>
+		</li>
+		<li>
+		<p class="MsoNormal">Fetches the data from the GET endpoint and sets it 
+		equal to the Data state variable in App<o:p></o:p></p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="MsoNormal">handleSubmit makes asynchronous call to the POST 
+	endpoint, set the state equal to the users input<o:p></o:p></p>
+	</li>
+	<li>
+	<p class="MsoNormal">Data passed to Table and Graph components as props<o:p></o:p></p>
+	<ul>
+		<li>
+		<p class="MsoNormal">Table made from React-Table library<o:p></o:p></p>
+		<ul>
+			<li>
+			<p class="MsoNormal">Memorizes the data<o:p></o:p></p>
+			</li>
+			<li>
+			<p class="MsoNormal">Column headers and rows created using map 
+			function<o:p></o:p></p>
+			</li>
+		</ul>
+		</li>
+		<li>
+		<p class="MsoNormal">Graph made from React-Vis library<o:p></o:p></p>
+		<ul>
+			<li>
+			<p class="MsoNormal">Bar chart: report date on x-axis, confirmed 
+			cases on y-axis<o:p></o:p></p>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="MsoNormal">Modals provide more info about app<o:p></o:p></p>
+	<ul>
+		<li>
+		<p class="MsoNormal">Show state is toggled when button is clicked<o:p></o:p></p>
+		</li>
+	</ul>
+	</li>
+</ul>
+<p><a href="index.html">Back to overview</a></p>
+<p><img alt="" height="865" src="./assets/images/reactvis.PNG" width="1409" /></p>
+
+</body>
+
+</html>

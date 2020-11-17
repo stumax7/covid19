@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>API</title>
+<style type="text/css">
+.auto-style1 {
+	background-color: #004D86;
+}
+.auto-style2 {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+}
+</style>
+</head>
+
+<body>
+
+<table class="auto-style1" style="width: 100%">
+	<tr>
+		<td class="auto-style2">API</td>
+	</tr>
+</table>
+<ul>
+	<li>
+	<p class="MsoNormal">Requires express, body parser, and MySQL<o:p></o:p></p>
+	</li>
+	<li>
+	<p class="MsoNormal">Creates secure connection to the database<o:p></o:p></p>
+	</li>
+	<li>
+	<p class="MsoNormal">Two endpoints:<span style="mso-spacerun:yes">&nbsp;
+	</span>GET and POST<o:p></o:p></p>
+	<ul>
+		<li>
+		<p class="MsoNormal">GET request queries database and selects all rows 
+		from the table, sending result to front end<o:p></o:p></p>
+		</li>
+		<li>
+		<p class="MsoNormal">POST request queries database and selects rows 
+		specified by ProvinceState parameter, sending result to front end<o:p></o:p></p>
+		<ul>
+			<li>
+			<p class="MsoNormal">Column value set equal to template literal, 
+			variable for the POST request<o:p></o:p></p>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="MsoNormal">In future iterations, the user will also be able to 
+	select a county and date range<o:p></o:p></p>
+	</li>
+</ul>
+<p><a href="index.html">Back to overview</a></p>
+<p><img alt="" height="714" src="./assets/images/backendAPI.PNG" width="1234" /></p>
+
+</body>
+
+</html>
