@@ -91,7 +91,7 @@ render() {
         <h1>Covid-19 Stats</h1>
        <div>
         <Modal1 show={this.state.show1} handleClose={this.hideModal1}>
-          <p>Creating a substantiative project is the best way to demonstrate one’s skills.  This project shows my journey thus far towards becoming a full stack developer. The journey started with a JAVA coding bootcamp that ended in the height of the lockdown. Subsequently, I have continued to expand my skills as shown in this project. </p>
+          <p>Creating a substantive project is the best way to demonstrate one’s skills.  This project shows my journey thus far towards becoming a full stack developer. The journey started with a JAVA coding bootcamp that ended in the height of the lockdown. Subsequently, I have continued to expand my skills as shown in this project. </p>
           <ul>
           <li>Node/Express backend</li>
           <li>React frontend</li>
