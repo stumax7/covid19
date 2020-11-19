@@ -117,7 +117,7 @@ render() {
           Project Delivers
         </button>
         </div>
-        <p>This app provides Covid-19 data for all counties in all fifty U.S. states in a bar graph table (top of the page) and a table (bottom of the page).</p>
+        <p>This app provides Covid-19 data for all counties in all fifty U.S. states in a bar graph (top of the page) and a table (bottom of the page).</p>
         <p>Simply type the name of the state and county you wish to view in the form below, as well as the date range, and click submit.</p>
         <p>All data comes from <a href="https://coronavirus.jhu.edu/map.html">Johns Hopkins Coronavirus Resource Center</a>.</p>
         {/* Pass method reference to give button functionality */}
